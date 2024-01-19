@@ -1,0 +1,56 @@
+﻿@model TeamUpdateVM
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Default form</h4>
+            <p class="card-description">
+                Basic form layout
+            </p>
+            <form class="forms-sample" enctype="multipart/form-data" method="post">
+                <div class="form-group">
+                    <label asp-for="Image">Image</label>
+                    <input asp-for="Image" class="form-control" placeholder="Image">
+                    <span class="text-danger" asp-validation-for="Image"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FullName">FullName</label>
+                    <input asp-for="FullName" class="form-control" placeholder="FullName">
+                    <span class="text-danger" asp-validation-for="FullName"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Position">Position</label>
+                    <input asp-for="Position" class="form-control" placeholder="Position">
+                    <span class="text-danger" asp-validation-for="Position"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Facebook">Facebook</label>
+                    <input asp-for="Facebook" class="form-control" placeholder="Facebook">
+                    <span class="text-danger" asp-validation-for="Facebook"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Twitter">Twitter</label>
+                    <input asp-for="Twitter" class="form-control" placeholder="Twitter">
+                    <span class="text-danger" asp-validation-for="Twitter"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Instagram">Instagram</label>
+                    <input asp-for="Instagram" class="form-control" placeholder="Instagram">
+                    <span class="text-danger" asp-validation-for="Instagram"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Linkedin">Linkedin</label>
+                    <input asp-for="Linkedin" class="form-control" placeholder="Linkedin">
+                    <span class="text-danger" asp-validation-for="Linkedin"></span>
+                </div>
+                <div class="form-check form-check-flat form-check-primary">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
